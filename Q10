@@ -1,0 +1,23 @@
+programa {
+	funcao inicio() {
+	    real numero_de_horas_trabalhadas, salario_por_hora, valor_da_hora_extra, salario_total
+	    
+	    escreva("Digite o número de horas trabalhadas em um mês: ")
+	    
+	    leia(numero_de_horas_trabalhadas)
+	    
+	    escreva("Digite o salário por hora trabalhada: R$")
+	    
+	    leia(salario_por_hora)
+	    
+	    se (numero_de_horas_trabalhadas > 160) {
+	      valor_da_hora_extra = (salario_por_hora * 50.0/100.0) * (numero_de_horas_trabalhadas - 40)
+	    } senao {
+	        valor_da_hora_extra = 0.0
+	    }
+	    
+	    salario_total = (salario_por_hora * 40 * 4) + valor_da_hora_extra
+	    
+	    escreva("O salário total do funcionário é de: R$", salario_total)
+	}
+}
