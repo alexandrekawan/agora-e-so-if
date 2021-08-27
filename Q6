@@ -1,0 +1,13 @@
+programa {
+	funcao inicio() {
+	    real valor_de_fabrica, custo_ao_consumidor
+	    
+	    escreva("Digite o valor de fábrica do carro: ")
+	    
+	    leia(valor_de_fabrica)
+	    
+	    custo_ao_consumidor = valor_de_fabrica + (28.0/100.0 * valor_de_fabrica) + (45.0/100.0 * valor_de_fabrica)
+	    
+	    escreva("O custo do carro ao consumidor é: ", custo_ao_consumidor)
+	}
+}
