@@ -1,0 +1,15 @@
+programa {
+	funcao inicio() {
+	    real valor
+	    
+	    escreva("Digite um valor: ")
+	    
+	    leia(valor)
+	    
+	    se (valor > 10) {
+	        escreva("É MAIOR QUE 10!\n")
+	    } senao {
+	        escreva("NÃO É MAIOR QUE 10!\n")
+	    }
+	}
+}
