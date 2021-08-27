@@ -1,0 +1,29 @@
+programa {
+	funcao inicio() {
+	    real numero_de_eleitores, numero_de_votos_validos, numero_de_votos_brancos, numero_de_votos_nulos, percentual_validos, percentual_brancos, percentual_nulos
+	    
+	    escreva("Escreva o número de eleitores do município: ")
+	    
+	    leia(numero_de_eleitores)
+	    
+	    escreva("Escreva o número de votos válidos: ")
+	    
+	    leia(numero_de_votos_validos)
+	    
+	    escreva("Escreva o número de votos brancos: ")
+	    
+	    leia(numero_de_votos_brancos)
+	    
+	    escreva("Escreva o número de votos nulos: ")
+	    leia(numero_de_votos_nulos)
+	    
+	    percentual_validos = (numero_de_votos_validos / numero_de_eleitores) * 100.0
+	    percentual_brancos = (numero_de_votos_brancos / numero_de_eleitores) * 100.0
+	    percentual_nulos = (numero_de_votos_nulos / numero_de_eleitores) * 100.0
+	    
+	    
+	    escreva("O percentual de votos válidos foi de: ", percentual_validos, "%\n")
+	    escreva("O percentual de votos brancos foi de: ", percentual_brancos, "%\n")
+	    escreva("O percentual de votos nulos foi de: ", percentual_nulos, "%\n")
+	}
+}
