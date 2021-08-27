@@ -1,0 +1,25 @@
+programa {
+	funcao inicio() {
+	    real salario_fixo, numero_de_carros_vendidos, comissao_fixa, valor_total_das_vendas, salario_final
+	    
+	    escreva("Digite o salário fixo do funcionário: R$")
+	    
+	    leia(salario_fixo)
+	    
+	    escreva("Digite o número de carros vendidos pelo funcionário: ")
+	    
+	    leia(numero_de_carros_vendidos)
+	    
+	    escreva("Digite a comissão fixa por carro vendido do funcionário: R$")
+	    
+	    leia(comissao_fixa)
+	    
+	    escreva("Digite o valor total das vendas efetuadas pelo funcionário: R$")
+	    
+	    leia(valor_total_das_vendas)
+	    
+	    salario_final = salario_fixo + (numero_de_carros_vendidos * comissao_fixa) + (5.0/100.0 * valor_total_das_vendas)
+	    
+	    escreva("O salário final do funcionário é: R$", salario_final)
+	}
+}
