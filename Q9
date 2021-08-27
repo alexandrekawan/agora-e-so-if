@@ -1,0 +1,18 @@
+programa {
+	funcao inicio() {
+	    inteiro numero_de_macas_compradas
+	    real custo_total
+	    
+	    escreva("Digite o número de maçãs compradas: ")
+	    
+	    leia(numero_de_macas_compradas)
+	    
+	    se (numero_de_macas_compradas < 12) {
+	        custo_total = 1.30 * numero_de_macas_compradas
+	    } senao {
+	        custo_total = 1.00 * numero_de_macas_compradas
+	    }
+	    
+	    escreva("O custo total da compra foi de: R$", custo_total, "\n")
+	}
+}
